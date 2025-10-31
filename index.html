@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Gesture Control</title>
-    <link rel="stylesheet" href="style.css">
+    <title>statichandgestrecog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Static Hand Gesture Recognition</h1>
-        <p>Show your hand to the camera to get a live prediction</p>
+        <h1><i class="fa-solid fa-wand-magic-sparkles"></i> Static Hand Gesture Recognition</h1>
+        <p>Show your hand to the camera for live predictions</p>
     </header>
 
     <main>
         <div id="video-container">
             <video id="webcam" autoplay playsinline></video>
             <div id="status-message">
-                Requesting Camera Access...
-            </div>
+                </div>
         </div>
         
-        <div id="prediction-output">
-            <span>Waiting for input...</span>
+        <div id="prediction-container">
+            <div id="prediction-label">Detected Gesture</div>
+            <div id="prediction-output">
+                <span>Waiting for input...</span>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>Made by Bedanta De!</p>
+        <p>Made by Bedanta De</p>
     </footer>
 
-    <canvas id="captureCanvas" width="640" height="480" style="display: none;"></canvas>
-
+    <canvas id="captureCanvas" width="640" height="480"></canvas>
+    
     <script src="script.js"></script>
+    
 </body>
 </html>
